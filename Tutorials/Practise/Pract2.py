@@ -206,3 +206,39 @@ print("Remove spaces from the beginning and end:",str4.strip(),sep="")
 str5 = "bigdata_spark"
 print(str5.startswith("big"))
 
+
+# Check Suffix
+# Q.16: Check if the string ends with ".csv"
+str6 = "cloud_storage.csv"
+print(str6.endswith(".csp"))
+
+
+
+# Split a Sentence into Words
+# Q.17: Split this string into a list of words
+
+str7 = "AWS GCP Azure"
+print(str7.split())
+
+
+# Join Words into a String
+# Q.18: Join these words into a string separated by "-"
+
+words = ["data", "engineering", "rocks"]
+print("-".join(words))
+
+
+
+# Replace Substring
+# Q.19: Replace "Hadoop" with "Spark"
+str8 = "I love Hadoop"
+print(str8.replace("Hadoop","Spark"))
+
+
+
+# Count Occurrences of a Character
+# Q.20: Count how many times "a" appears in this string
+str9 = "banana"
+print(str9.count("a"))
+
+
