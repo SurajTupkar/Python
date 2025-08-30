@@ -49,5 +49,10 @@ i=0
 empty_tuple=(1,4,9,16,25,36,49,64,81,100)
 print("Length of tuple:",len(empty_tuple),sep="")
 while(i<len(empty_tuple)):
+    if(empty_tuple[i]==49):
+        
+        continue
     print(empty_tuple[i])
     i+=1
+
+
