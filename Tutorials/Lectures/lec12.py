@@ -24,3 +24,11 @@ for i in tup:
     print(i)
 else:
     print("**********************")
+
+# range
+
+seq=range(50)
+print(seq[48])
+
+for i in range(2,5,2):
+    print(i)
