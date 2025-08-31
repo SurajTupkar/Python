@@ -1,2 +1,1 @@
-Demo text file 
-created for IO in python.
+I am going to overwrite content from existing file

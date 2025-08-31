@@ -3,12 +3,12 @@
 # 1. Reading File
 # read,readline
 
-f=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
-# data=f.read()
-line1=f.readline()
-print(line1)
-line2=f.readline()
-print(line2)
+# f=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
+# # data=f.read()
+# line1=f.readline()
+# print(line1)
+# line2=f.readline()
+# print(line2)
 # f.close()
 
 # data=f.write("Overwrite file content using write")
@@ -20,9 +20,17 @@ print(line2)
 """
 modes:
 1) w : overwrite a existing file
-2) a : append a file
+2) a : append a file at the end 
 
 """
+file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","w")
+data=file.write("I am going to overwrite content from existing file")
+print(data)
+
+file1=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
+readdata=file1.read()
+print(readdata)
+
 
 
 
