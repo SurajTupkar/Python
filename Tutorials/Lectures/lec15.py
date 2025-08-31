@@ -15,3 +15,14 @@ print(line2)
 # print(data)
 
 
+
+# Writing to a file
+"""
+modes:
+1) w : overwrite a existing file
+2) a : append a file
+
+"""
+
+
+
