@@ -60,3 +60,23 @@ factor=1
 for i in range(1,n+1):
     factor*=i
 print(factor)
+
+
+
+# USD to INR
+
+def conv(Value):
+    INR=Value*83
+    return INR
+
+print(conv(73))
+
+
+def odd_even(value):
+    if(value%2==0):
+        print(value," is even")
+    else:
+        print(value,"is odd")
+
+num=int(input("Enter the value to check: "))
+odd_even(num)
