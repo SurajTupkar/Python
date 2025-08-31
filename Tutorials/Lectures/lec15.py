@@ -37,9 +37,11 @@ modes:
 #append
 
 file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
-data=file.write(" I am going to append some text")
-# data=file.read()
+# data=file.write("\nI am going to append some other text on the next line using back slash n")
+data=file.read()
 print(data)
+
+
 
 
 

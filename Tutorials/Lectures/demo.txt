@@ -1,1 +1,2 @@
-I am going to overwrite content from existing file I am going to append some text
+
+I am going to append some other text on the next line using back slash n
