@@ -1,3 +1,8 @@
+#  IO File
+
+# 1. Reading File
+# read,readline
+
 f=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
 # data=f.read()
 line1=f.readline()
@@ -8,3 +13,5 @@ print(line2)
 
 # data=f.write("Overwrite file content using write")
 # print(data)
+
+
