@@ -1,2 +1,1 @@
-
-I am going to append some other text on the next line using back slash n
+I am writing another text in next line by using r+ modedesing back slash n

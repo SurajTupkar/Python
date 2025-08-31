@@ -22,6 +22,7 @@ modes:
 1) w : overwrite a existing file
 2) a : append a file at the end 
 
+-> If file is not present ... and we try to open a file that file it's newly created a file
 """
 
 # overwrite
@@ -36,13 +37,31 @@ modes:
 
 #append
 
-file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
-# data=file.write("\nI am going to append some other text on the next line using back slash n")
-data=file.read()
-print(data)
+# file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
+# # data=file.write("\nI am going to append some other text on the next line using back slash n")
+# data=file.read()
+# print(data)
+# file.close()
 
 
+"""
+Mode : r+
+-> We can overwrite file using "r+" mode but data write at the begining of the text.
+-> then we can read it also
+"""
+
+# file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r+")
+# data=file.write("I am writing another text in next line by using r+ mode")
+# print(data)
+# d1=file.read()
+# print(d1)
 
 
+"""
+Mode : w+
+Open for reading and writing.
+The file is created if it does not exist,otherwise it is truncated.
+The stream is positioned at the biginning of the file.
 
+"""
 
