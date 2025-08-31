@@ -23,13 +23,23 @@ modes:
 2) a : append a file at the end 
 
 """
-file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","w")
-data=file.write("I am going to overwrite content from existing file")
-print(data)
 
-file1=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
-readdata=file1.read()
-print(readdata)
+# overwrite
+# file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","w")
+# data=file.write("I am going to overwrite content from existing file")
+# print(data)
+
+# read
+# file1=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
+# readdata=file1.read()
+# print(readdata)
+
+#append
+
+file=open("D:\DE\Python\Tutorials\Lectures\demo.txt","r")
+data=file.write(" I am going to append some text")
+# data=file.read()
+print(data)
 
 
 
