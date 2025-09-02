@@ -2,6 +2,22 @@
 OOPS:
 
 class & objects 
+constructor
+self keyword
+
+syntax:
+
+class Class_name:
+    Data Members
+    Member Function
+
+    //constructor
+    def __int__(self):
+        //Defination
+
+objects
+
+object=Class_name()
 
 constructor:
 
@@ -15,6 +31,11 @@ class Student:
         self.name=fullname
         print("This is constructor")
         print("Address of self:",self)
+    
+
+
+    
+
 
 
 s1=Student("SKT")
