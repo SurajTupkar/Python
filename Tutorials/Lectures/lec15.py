@@ -65,3 +65,8 @@ The stream is positioned at the biginning of the file.
 
 """
 
+file=open("D:\DE\Python\Tutorials\Lectures\sample.txt","w+")
+# data=file.write("This is Sample.txt file")
+# print(data)
+print(file.read())
+
