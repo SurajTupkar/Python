@@ -4,6 +4,8 @@ OOPS:
 class & objects 
 constructor
 self keyword
+class & Instance Attribute
+
 
 syntax:
 
