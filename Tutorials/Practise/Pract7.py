@@ -89,7 +89,12 @@ constructor
 class and instance attributes
 Methods
 Static Methods
+del and private
 
+Encapsulation
+Abstraction
+polymorphism
+Inheritance 
 """
 
 
@@ -104,25 +109,40 @@ class Student:
     def fun():
         print("This is class instance")
 
-    def fun1(self):
+    def __fun1(self):
         print("This is object instance")
 
     # default,para ... constructor
     def __init__(self,name,age):
-        self.name=name
+        self.__name=name
         self.age=age
         print("This is constructor")
 
+    def getfun1(self):
+        self.__fun1()
+
+    def getname(self):
+        print(self.__name)
+
+
     
 obj=Student("suraj",24)
-print(obj.name)
+obj.getname()
 print(obj.age)
 
+obj.getfun1()
+
 obj1=Student("x",1)
-obj1.fun1()
+# obj1.fun1()
 
 Student.fun()
-obj.fun1()
+# obj.fun1()
+
+# Delete : No need to delete obj manually because memeory handling handle by python
+del obj
+# obj.fun1()
+
+
 
 
 
