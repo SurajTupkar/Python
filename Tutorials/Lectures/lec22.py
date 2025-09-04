@@ -9,6 +9,8 @@ Inheritance
 """
 
 class Car:
+    def __init__(self,type):
+        self.type=type
     def start(self):
         print("Start the car")
     def stop(self):
@@ -22,12 +24,15 @@ class Car1:
 
 class Toyota(Car,Car1):
     # start()
-    def __init__(self,name):
+    def __init__(self,name,type):
+        super().__init__(type)
         self.name=name
+        super().start()
     
 
 
-obj=Toyota("Fortuner")
+obj=Toyota("Fortuner","Disel")
 print(obj.name)
+print(obj.type)
 obj.start()
 obj.fun()
