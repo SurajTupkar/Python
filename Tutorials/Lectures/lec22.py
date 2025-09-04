@@ -1,4 +1,12 @@
-# Inheritance
+"""
+Inheritance
+-> Parent class can Inherite properties from Derived class.
+-> Types 
+1) Single
+2) Multiple
+3) Multilevel
+
+"""
 
 class Car:
     def start(self):
