@@ -69,3 +69,12 @@ list.pop(2)
 print(list)
 
 
+# 7. extend
+
+list1=[1,2,"Ram",7.8]
+list1.extend("Suraj")
+print(list1)
+
+# 8. insert(index,value)
+list1.insert(1,90)
+print(list1)
