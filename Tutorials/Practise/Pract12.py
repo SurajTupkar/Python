@@ -197,6 +197,9 @@ dict={
 }
 
 print(type(dict))
+print("Keys in dict: ",dict.keys())
+print("values in dict: ",dict.values())
+print("items in dict: ",dict.items())
 print(dict["name"])
 dict["gender"]="Male"
 print(dict)
