@@ -141,8 +141,9 @@ print(str1)
 # List
 
 list=[1,2,3,4,5]
+print("list with end")
 for i in list:
-    print(i)
+    print(i,end=" ")
 
 print(" ")
 i=4
@@ -188,3 +189,22 @@ print(tup[-3:]) # 3 4 5
 
 "Methods"
 print(tup)
+
+
+dict={
+    "name":"suraj",
+    "age":10
+}
+
+print(type(dict))
+print(dict["name"])
+dict["gender"]="Male"
+print(dict)
+
+
+
+sets={1,2,2,3,4}
+print(sets)
+
+
+
