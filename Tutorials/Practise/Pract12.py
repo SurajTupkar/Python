@@ -144,7 +144,7 @@ list=[1,2,3,4,5]
 for i in list:
     print(i)
 
-print("      ")
+print(" ")
 i=4
 while(i<len(list)):
     print(list[i])
@@ -155,3 +155,4 @@ while(i<len(list)):
 
 # Indexing Slicing and Methods :
 
+list.
