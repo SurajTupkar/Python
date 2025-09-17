@@ -153,6 +153,14 @@ while(i<len(list)):
         break
 
 
+print(" ")
+print("List")
 # Indexing Slicing and Methods :
 
-list.
+print(list[2:])
+print(list[:5])
+print(list[2:])
+print(list[-5:])
+print(list[:-2])
+
+
