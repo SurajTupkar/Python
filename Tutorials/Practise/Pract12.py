@@ -163,4 +163,28 @@ print(list[2:])
 print(list[-5:])
 print(list[:-2])
 
+list.append(10)
+print(list)
 
+list.pop(2)
+print("After pop",list)
+
+
+# list[6]=12
+# print(list)
+#  Methods
+
+tup=(1,2,3,4,5)
+print(type(tup))
+
+print(tup)
+
+# Slicing and Indexing
+
+print(tup[1:]) # 2,3,4,5
+print(tup[:5]) # 1 2 3 4 5
+print(tup[:-3]) # 1 2
+print(tup[-3:]) # 3 4 5
+
+"Methods"
+print(tup)
