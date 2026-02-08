@@ -53,3 +53,29 @@ print("replace a with @:",text.replace('a','@'))
 
 # Q10.Find the index of first occurrence of a character.
 print("First occurence of a:",text.find('a'))
+
+
+# Q11.Check if two strings are anagrams.
+# Example: listen, silent
+
+t="listen"
+s="silent"
+
+if(sorted(t)==sorted(s)):
+    print("anagram")
+else:
+    print("not anagram")
+
+print(sorted(t))
+
+# Q12.Find the most frequent character in a string.
+
+for i in text:
+    if(str.count(i))
+
+# Q13.Capitalize the first letter of each word (without using .title()).
+
+# Q14.Compress string:
+# aaabbc → a3b2c1
+
+# Q15.Check if string contains only digits (without using .isdigit()).

@@ -18,6 +18,7 @@
 11.isdigit()    : Only numbers check
 12.isalnum()    : Letters and numbers
 13.isspace()    : Only spaces
+14.sorted()     : arranges elements in order and returns a new list.
 
                 
 """
@@ -43,5 +44,107 @@ Q.Why strings are immutable?
 If Python allowed changing it, it could affect other variables.
 So Python never modifies a string.
 Instead, it creates a new string and you must reassign it.
+
+"""
+
+
+
+
+
+
+
+
+
+
+"""
+SUMMARY:
+✅ Indexing / Slicing
+✅ upper(), lower()
+✅ isalpha(), isdigit()
+✅ find(), count()
+✅ replace(), strip()
+✅ split(), join()
+✅ sorted()
+✅ Loop on string
+✅ Immutability concept
+
+1. String Basics : Creating string
+                   Indexing
+                   Slicing
+
+s="python"
+s[0]      #p
+s[-1]     #n
+s[1:4]    #yth
+s[::-1]   #nohtyp
+
+
+2. Important String Methods
+Case Methods
+s.upper()
+s.lower()
+s.capitalize()
+s.title()
+
+Check Methods (Validation - DE Use )
+s.isalpha()    # only letters
+s.isdigit()    # only numbers
+s.isalnum()    # letters+numbers
+s.isspace()    # spaces
+
+Search Methods
+s.find("a")     # index or -1
+s.count("a")    # frequency
+
+Replace & Remove
+s.replace("a","@")
+s.strip()       # remove spaces
+s.lstrip()
+s.rstrip()
+
+Split & Join (Very Important for DE)
+s.split()       # string → list
+" ".join(list)  # list → string
+
+Example:
+"hi hello".split()   # ['hi','hello']
+
+
+3. Looping on String
+for ch in s:
+    print(ch)
+
+
+Used in:
+✔ Counting
+✔ Cleaning
+✔ Validation
+
+
+4. Sorting String
+sorted(s)
+
+Used in:
+✔ Anagram
+✔ Comparison
+
+5. String + Conditions 
+
+Example:
+
+if ch.isalpha():
+if ch in "aeiou":
+
+
+6. Immutability (Concept)
+👉 String cannot change in place
+👉 Always new copy created
+
+Example:
+
+s = "hi"
+s = s.replace("h","b")
+
+
 
 """
