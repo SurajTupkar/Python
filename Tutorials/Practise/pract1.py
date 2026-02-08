@@ -6,7 +6,7 @@ Implicit -> You don't need to tell data type of any variable -> Python,Js
 Explicit -> You should be mentioned data type while creating varibles -> C,CPP,Java
 Comments -> There are 2 Ways to do comments in pythons
 # -> Single line comment
-""""""" -> MultiLine Comment
+""" """ -> MultiLine Comment
 
 Data Types : built in : int,string,boolean,float
              built in : list, tuple, dictionaries & sets

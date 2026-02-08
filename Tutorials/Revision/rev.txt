@@ -1,0 +1,15 @@
+1. Expression Execution
+2. Taking input From User
+3. Conditional Statements
+4. Data Types
+5. Strings -> Ecscape Character
+           -> Concatenation
+           -> length
+           -> indexing
+           -> Slicing : positive and negative
+           -> Functions : 1) endswith
+                          2) startswith
+                          3) capitalize
+                          4) replace
+                          5) find
+                          6) count
