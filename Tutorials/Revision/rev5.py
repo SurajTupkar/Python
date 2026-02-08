@@ -1,16 +1,26 @@
 # String Functions
+"""
+ 1.endswith()   : return true if string ends with substr
+ 2.startswith() : return true if string starts with substr
+ 3.capitalize() : capitalize 1st char
+ 4.replace()    : replaces all occurences of old with new
+ 5.find()       : returns 1st index of 1st occurence
+ 6.count()      : counts the occurence of substr in string
+ 7.upper()      : convert string to uppercase
+ 8.lower()      : convert string to lowercase
+ 9.len(str)     : print the length of string
+ 10.isalpha()   : check only letters
+                  isapha returns True only if:
+                  character is letter(a-z or A-Z)
+                  No numbers
+                  No spaces
+                  No special symbols
+11.isdigit()    : Only numbers check
+12.isalnum()    : Letters and numbers
+13.isspace()    : Only spaces
 
-# 1.endswith()   : return true if string ends with substr
-# 2.startswith() : return true if string starts with substr
-# 3.capitalize() : capitalize 1st char
-# 4.replace()    : replaces all occurences of old with new
-# 5.find()       : returns 1st index of 1st occurence
-# 6.count()      : counts the occurence of substr in string
-# 7.upper()      : convert string to uppercase
-# 8.lower()      : convert string to lowercase
-# 9.len(str)     : print the length of string
-
-
+                
+"""
 str = "engineering"
 
 print(str.endswith("ng")) #True
