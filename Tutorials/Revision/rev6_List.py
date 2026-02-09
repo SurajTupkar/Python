@@ -170,17 +170,187 @@ nums.sort()
 chars.sort()
 print(nums + chars)
 
+
+# sort :sort in ascending order
+
+l=[1,8,9,4,7,2]
+
+# if i have to return list in descending order
+l.sort(reverse=True)
+print("Descending order:",l)
+
 nums.reverse()
 chars.reverse()
 print(nums + chars)
 
+# 5. loops on list
+
+# Normal Loop
+
+for i in lst:
+    print(i)
+
+# Use when index needed.
+for i in range(len(lst)):
+    print(lst[i])
 
 
+# 6.Useful Built-in Functions
+
+# len(lst)
+print(len(lst)) # 9
+
+# max
+# print(max(lst)) # Not supported because list contain mixed data type
+print(max(marks)) # 100
+
+# min
+print(min(marks)) # 5
+
+# sum
+print(sum(marks)) # 301
+
+# 7. Nested List
+
+lst=[[1,2],[3,4],[3,5],[5,7,9]]
+
+print(lst[0][1]) # 2
+print(lst[3][2]) # 9
+
+# 8. copy
+
+"""
+Why do we need copy list?
+Because this is dangerous:
+a=[1,2,3]
+b=a
+
+Now:
+a and b point to same memory.
+
+so:
+b[0]=100
+print(a) # 100,2,3 
+100 replace the value at index 0
+
+we changed b but a also changed.
+Why?
+Because both refer to same list
+
+This is called : shallow reference (same object)
+a ---> [1,2,3]
+b ---> [1,2,3]
+one list,two names
+
+correct way : copy list(new memory)
+we want:
+a->[1,2,3]
+b->[1,2,3]
+Two different list
+"""
 
 
+x=[1,2,3]
+z=x
+
+print("x:",x)
+print("z:",z)
+
+# below both list will change because both point to same memory location
+z[0]=199
+print("x:",x)
+print("z:",z)
+
+# Method 1: .copy()
+
+a=[[1]]
+b=a.copy()
+
+b[0]=100
+print("a:",a)
+print("b:",b)
+print("a:",id(a[0]))
+print("b:",id(b[0]))
+print("a:",id(a[0]),"b:",id(b[0]))
+
+# Note : .copy creates shallow copy 
+
+"""
+
+.copy() and [:] both create shallow copy.
+For normal list, shallow copy behaves like deep copy.
+For nested list, it remains shallow.
+
+In short
+.copy() and slicing create shallow copy.
+For simple lists it behaves like deep copy.
+For nested lists we must use deepcopy().
 
 
+In Python, lists are mutable, but immutable elements like int and string are replaced, not modified.
+A shallow copy creates a new outer list but shares references of inner elements.
+A deep copy creates completely independent objects.
 
+
+Immutable → int, str, float, bool, tuple
+Mutable   → list, dict, set
+
+list[i]=x → overwrite reference
+
+.copy() / [:] → Shallow copy
+
+Normal list → element references shared
+Nested list → inner list shared
+
+deepcopy → full independent copy
+
+id() unreliable for immutable types
+
+
+"""
+
+# slicing
+
+l=[1,2,3]
+m=l[:] # l[start:0,end:len(l),step:1]
+print("l:",l)
+print("m:",m)
+l.append(19)
+m.append(30)
+print("l:",l)
+print("m:",m)
+print("l:",id(l[0]))
+print("m:",id(m[0]))
+
+
+# nested list
+import copy
+ls=[[1,2],[3,7],["a","b"]]
+bs=copy.deepcopy(ls)
+print("ls",ls)
+print("bs",bs)
+bs.append(5)
+bs[0].append(5)
+print("bs:",bs)
+
+"""
+Shallow copy copies only references of inner objects, so nested structures are shared. 
+Deep copy recursively copies all objects, so no memory is shared.
+
+Shallow Copy:
+- .copy(), [:]
+- Outer list new
+- Inner shared
+- Unsafe for nested
+
+Deep Copy:
+- copy.deepcopy()
+- Everything new
+- Safe
+- More memory
+
+
+"""
 
 
 
