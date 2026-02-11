@@ -17,8 +17,15 @@
                   No special symbols
 11.isdigit()    : Only numbers check
 12.isalnum()    : Letters and numbers
-13.isspace()    : Only spaces
+13.isspace()    : Checks whether all characters are spaces
+                  Returns True only if string contains only whitespace
+                  If even one letter/number is present → False
 14.sorted()     : arranges elements in order and returns a new list.
+15.split()      : It breaks a string into parts and returns a list.
+                  string.split(separator)
+16.join()       : It joins list elements into one string using a separator.
+                  Syntax : separator.join(list)
+
 
                 
 """
@@ -36,6 +43,30 @@ print("Upper:",str.upper())
 print("Lower:",str.lower())
 print(str)
 print(len(str))
+
+
+# Join
+
+# Basic
+
+words = ["A","B","C","D"]
+result = " ".join(words)
+result1 = "".join(words)
+print("with space",result)
+print("without space",result1)
+
+# Medium
+
+row = ["101","Rahul","50000","IT"]
+csv_line = ",".join(row)
+print(csv_line)
+
+# High
+
+record = "2026|Mumbai|50000"
+result2 = record.split("|") # string -> List
+print(result2)
+print("String:"," ".join(result2))
 
 
 """

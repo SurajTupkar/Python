@@ -13,3 +13,39 @@
                           4) replace
                           5) find
                           6) count
+                          7) upper
+                          8) lower
+                          9) len(str)
+                          10) isalpha()
+                          11) isdigit()
+                          12) isalnum()
+                          13) isspace()
+                          14) sorted
+                          15) split
+                          16) join
+
+
+
+
+
+
+
+
+
+
+
+
+Covered:
+Input
+String
+If-else
+For loop
+List/Tuple
+
+Next:
+While
+Function
+Dict
+Files
+Exception
+

@@ -49,3 +49,49 @@
 #                           4) replace
 #                           5) find
 #                           6) count
+                        #   7) upper
+                        #   8) lower
+                        #   9) len(str)
+                        #   10) isalpha()
+                        #   11) isdigit()
+                        #   12) isalnum()
+                        #   13) isspace()
+                        #   14) sorted
+                        #   15) split
+                        #   16) join
+
+s = "Engineering"
+
+print(s.endswith("g"))   #True
+print(s.endswith("a"))   #False
+print(s.startswith("E")) #True
+print(s.startswith("n")) #False
+print(s.capitalize())
+print(s.replace("En","en"))
+print(s.find("e"))
+print(s.lower().count("e"))
+
+#                          7) upper
+#                          8) lower
+#                          9) len(str)
+#                          10) isalpha()
+#                          11) isdigit()
+#                          12) isalnum()
+#                          13) isspace()
+#                          14) sorted
+#                          15) split
+#                          16) join
+
+print(s.isalpha()) #True : Check only Letters 
+print(s.isdigit()) #False : Check only digit
+print(s.isalnum()) # True : Check Letters and numbers
+s1=" "
+print("space:",s1.isspace())
+
+text = "A,B,C,D"
+print(text.split(","))
+
+text1 = "A  B C"
+print(text1.split())
+
+
