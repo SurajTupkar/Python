@@ -1,0 +1,21 @@
+Q1. Take a string input and print it in uppercase.
+Q2. Take a string and print its length.
+Q3.Print the first and last character of a string.
+Q4. Reverse a string using slicing.
+Q5. Count how many times 'a' appears in a string.
+Q6.Check if a string is palindrome.
+Example: madam → Yes
+Q7.Remove all spaces from a string.
+Q8.Count number of vowels and consonants.
+Q9.Replace all 'a' with '@'.
+Q10.Find the index of first occurrence of a character.
+Q11.Check if two strings are anagrams.
+Example: listen, silent
+Q12.Find the most frequent character in a string.
+Q13.Capitalize the first letter of each word (without using .title())
+Q14.Compress string:
+aaabbc → a3b2c1
+Q15.Check if string contains only digits (without using .isdigit()).
+
+
+
