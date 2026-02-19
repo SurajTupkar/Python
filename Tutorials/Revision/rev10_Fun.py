@@ -137,3 +137,101 @@ demo(a,*b,**c)
 # 👉 This is called unpacking
 
 
+# Nested Function
+
+def outer_function():
+    print("outer_function called")
+    x=1
+    def inner_function():
+        print("inner_function called")
+        y=3
+        return x+y
+    return inner_function()
+
+print(outer_function())
+
+
+
+
+"""
+Pass by value and
+pass by reference
+
+👉 Python is neither purely pass-by-value nor purely pass-by-reference.
+Python follows :
+                🔹 Pass by Object Reference (also called Call by Sharing)
+            Means :
+            > Function gets reference of the object
+            > But not direct access to the variable
+
+In Python:
+
+1️⃣ Arguments are passed as object references
+
+2️⃣ If the object is immutable:
+
+You cannot change it
+
+Any “change” creates a new object
+
+So original is unaffected
+
+3️⃣ If the object is mutable:
+
+You can modify it in place
+
+So original is affected
+
+4️⃣ If you use =:
+
+A new object is created
+
+Reference is changed
+
+Original is not affected
+
+
+With Examples
+Immutable → New Object
+def f(x):
+    x = x + 1   # new object
+
+a = 5
+f(a)
+print(a)  # 5
+
+
+x → new object
+a → same old object
+
+Mutable → Same Object
+def f(lst):
+    lst.append(5)
+
+x = [1,2]
+f(x)
+print(x)  # [1,2,5]
+
+
+Same object modified ✅
+
+Mutable + Assignment → New Object
+def f(lst):
+    lst = [9,9]
+
+x = [1,2]
+f(x)
+print(x)  # [1,2]
+
+
+New list created ❌
+Old unchanged
+
+
+In short :
+Python uses pass by object reference.
+For immutable objects, modifications create new objects.
+For mutable objects, in-place changes affect the original.
+Assignment always creates a new reference.
+
+"""
