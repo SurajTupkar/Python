@@ -81,7 +81,7 @@ print(marks)
 marks.append(5)      # add 5 at the end
 print(marks)         # [100,20,30,40,50,5]
 
-marks.insert(1,99)   # Add at index : 99 add at index 99 
+marks.insert(1,99)   # Add at index : 99 add at index 1 
 print(marks)         # [100,99,20,30,40,50,5]
 
 marks.extend([7,8])  # add many at the end

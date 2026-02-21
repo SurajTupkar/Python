@@ -28,8 +28,8 @@ str = "This is a String"
 """ 
 indexing start from 0
 so 
-T h i s   i s   a    S t r i  n  g
-0 1 2 3 4 5 6 7 8 9 10 11 12  13 14
+T h i s   i s   a   S   t  r  i   n  g
+0 1 2 3 4 5 6 7 8 9 10 11 12  13 14  15
 
 How to acces them using indexing
 str[0] -> T
